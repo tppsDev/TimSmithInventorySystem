@@ -14,7 +14,7 @@
 <?import javafx.scene.layout.VBox?>
 <?import javafx.scene.text.Font?>
 
-<AnchorPane id="AnchorPane" prefHeight="671.0" prefWidth="1064.0" xmlns="http://javafx.com/javafx/8.0.171" xmlns:fx="http://javafx.com/fxml/1" fx:controller="View_Controller.AddProductController">
+<AnchorPane id="AnchorPane" prefHeight="671.0" prefWidth="1064.0" xmlns="http://javafx.com/javafx/8.0.171" xmlns:fx="http://javafx.com/fxml/1" fx:controller="View_Controller.ModifyProductController">
    <padding>
       <Insets bottom="5.0" left="10.0" right="10.0" top="5.0" />
    </padding>
@@ -25,7 +25,7 @@
                <children>
                   <HBox alignment="CENTER_LEFT" prefHeight="150.0" prefWidth="200.0">
                      <children>
-                        <Label fx:id="titleLabel" text="Add Product">
+                        <Label fx:id="titleLabel" text="Modify Product">
                            <font>
                               <Font name="System Bold" size="16.0" />
                            </font></Label>
@@ -34,14 +34,14 @@
                         <Insets left="30.0" />
                      </padding>
                   </HBox>
-                  <GridPane prefHeight="281.0" prefWidth="375.0">
+                  <GridPane alignment="CENTER_LEFT" prefHeight="281.0" prefWidth="375.0">
                     <columnConstraints>
-                      <ColumnConstraints hgrow="SOMETIMES" maxWidth="250.0" minWidth="10.0" percentWidth="0.0" prefWidth="51.0" />
-                      <ColumnConstraints hgrow="SOMETIMES" maxWidth="339.0" minWidth="10.0" prefWidth="324.0" />
+                      <ColumnConstraints hgrow="SOMETIMES" maxWidth="183.0" minWidth="10.0" percentWidth="0.0" prefWidth="44.0" />
+                      <ColumnConstraints hgrow="SOMETIMES" maxWidth="332.0" minWidth="10.0" percentWidth="0.0" prefWidth="331.0" />
                     </columnConstraints>
                     <rowConstraints>
-                      <RowConstraints maxHeight="85.0" minHeight="10.0" prefHeight="42.0" vgrow="SOMETIMES" />
-                      <RowConstraints maxHeight="71.0" minHeight="10.0" prefHeight="71.0" vgrow="SOMETIMES" />
+                      <RowConstraints minHeight="10.0" prefHeight="30.0" vgrow="SOMETIMES" />
+                      <RowConstraints minHeight="10.0" prefHeight="30.0" vgrow="SOMETIMES" />
                         <RowConstraints minHeight="10.0" prefHeight="30.0" vgrow="SOMETIMES" />
                         <RowConstraints minHeight="10.0" prefHeight="30.0" vgrow="SOMETIMES" />
                       <RowConstraints minHeight="10.0" prefHeight="30.0" vgrow="SOMETIMES" />
@@ -52,40 +52,44 @@
                         <Label text="Inv" GridPane.rowIndex="2" />
                         <Label text="Price" GridPane.rowIndex="3" />
                         <Label text="Max" GridPane.rowIndex="4" />
-                        <TextField fx:id="productIDTextField" disable="true" editable="false" maxHeight="30.0" maxWidth="185.0" GridPane.columnIndex="1" />
+                        <HBox alignment="CENTER_LEFT" prefHeight="100.0" prefWidth="200.0" GridPane.columnIndex="1">
+                           <children>
+                              <TextField fx:id="productIDTextField" disable="true" editable="false" prefHeight="25.0" prefWidth="58.0" />
+                           </children>
+                        </HBox>
                         <HBox alignment="CENTER_LEFT" prefHeight="100.0" prefWidth="200.0" spacing="10.0" GridPane.columnIndex="1" GridPane.rowIndex="1">
                            <children>
-                              <TextField fx:id="nameTextField" maxHeight="30.0" maxWidth="185.0" />
-                              <Label fx:id="nameErrorLabel" prefHeight="45.0" prefWidth="150.0" textFill="RED" wrapText="true" />
+                              <TextField fx:id="nameTextField" maxHeight="30.0" maxWidth="185.0" prefHeight="30.0" prefWidth="121.0" />
+                              <Label fx:id="nameErrorLabel" prefHeight="40.0" prefWidth="150.0" textFill="RED" wrapText="true" />
                            </children>
                         </HBox>
                         <HBox alignment="CENTER_LEFT" prefHeight="100.0" prefWidth="200.0" spacing="10.0" GridPane.columnIndex="1" GridPane.rowIndex="2">
                            <children>
                               <TextField fx:id="inStockTextField" maxHeight="30.0" maxWidth="90.0" />
-                              <Label fx:id="inStockErrorLabel" prefHeight="45.0" prefWidth="200.0" textFill="RED" wrapText="true" />
+                              <Label fx:id="inStockErrorLabel" prefHeight="40.0" prefWidth="150.0" textFill="RED" wrapText="true" />
                            </children>
                         </HBox>
                         <HBox alignment="CENTER_LEFT" prefHeight="100.0" prefWidth="200.0" spacing="10.0" GridPane.columnIndex="1" GridPane.rowIndex="3">
                            <children>
                               <TextField fx:id="priceTextField" maxHeight="30.0" maxWidth="90.0" />
-                              <Label fx:id="priceErrorLabel" prefHeight="45.0" prefWidth="200.0" textFill="RED" wrapText="true" />
+                              <Label fx:id="priceErrorLabel" prefHeight="40.0" prefWidth="150.0" textFill="RED" wrapText="true" />
                            </children>
                         </HBox>
                         <HBox alignment="CENTER_LEFT" prefHeight="100.0" prefWidth="200.0" spacing="10.0" GridPane.columnIndex="1" GridPane.rowIndex="4">
                            <children>
-                              <TextField fx:id="maxTextField" prefHeight="30.0" prefWidth="40.0" />
-                              <Label fx:id="maxErrorLabel" prefHeight="45.0" prefWidth="85.0" textFill="RED" wrapText="true" />
+                              <TextField fx:id="maxTextField" maxHeight="30.0" maxWidth="90.0" prefHeight="30.0" prefWidth="50.0" />
+                              <Label fx:id="maxErrorLabel" prefHeight="40.0" prefWidth="85.0" textFill="RED" wrapText="true" />
                               <Label text="Min">
                                  <HBox.margin>
                                     <Insets />
                                  </HBox.margin>
                               </Label>
-                              <TextField fx:id="minTextField" prefHeight="30.0" prefWidth="40.0">
+                              <TextField fx:id="minTextField" maxHeight="30.0" maxWidth="90.0" prefHeight="30.0" prefWidth="50.0">
                                  <HBox.margin>
-                                    <Insets left="10.0" />
+                                    <Insets />
                                  </HBox.margin>
                               </TextField>
-                              <Label fx:id="minErrorLabel" prefHeight="45.0" prefWidth="85.0" textFill="RED" wrapText="true" />
+                              <Label fx:id="minErrorLabel" prefHeight="40.0" prefWidth="85.0" textFill="RED" wrapText="true" />
                            </children>
                         </HBox>
                      </children>
@@ -111,9 +115,9 @@
                   </TableView>
                   <HBox alignment="TOP_RIGHT" prefHeight="75.0" prefWidth="200.0" spacing="10.0">
                      <children>
-                        <Label fx:id="productPartListErrorLabel" prefHeight="50.0" prefWidth="277.0" textFill="RED">
+                        <Label fx:id="productPartListErrorLabal" prefHeight="51.0" prefWidth="252.0" textFill="RED" wrapText="true">
                            <HBox.margin>
-                              <Insets right="250.0" />
+                              <Insets right="280.0" />
                            </HBox.margin>
                         </Label>
                         <Button fx:id="addButton" mnemonicParsing="false" onAction="#handleAddPartButtonAction" prefHeight="25.0" prefWidth="65.0" text="Add" />

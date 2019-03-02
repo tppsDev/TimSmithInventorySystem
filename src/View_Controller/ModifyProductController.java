@@ -5,7 +5,6 @@
 package View_Controller;
 
 import Model.Part;
-import Model.Product;
 import java.net.URL;
 import java.util.ResourceBundle;
 import javafx.fxml.FXML;
@@ -21,8 +20,8 @@ import javafx.scene.control.TextField;
  *
  * @author Tim Smith>
  */
-public class AddProductController implements Initializable {
-    //Labels
+public class ModifyProductController implements Initializable {
+    // Labels
     @FXML private Label titleLabel;
     @FXML private Label nameErrorLabel;
     @FXML private Label inStockErrorLabel;
