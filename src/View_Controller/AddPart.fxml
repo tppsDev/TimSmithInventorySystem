@@ -11,10 +11,14 @@
 <?import javafx.scene.layout.HBox?>
 <?import javafx.scene.layout.RowConstraints?>
 <?import javafx.scene.layout.VBox?>
+<?import javafx.scene.text.Font?>
 
 <AnchorPane id="AnchorPane" prefHeight="520.0" prefWidth="496.0" xmlns="http://javafx.com/javafx/8.0.171" xmlns:fx="http://javafx.com/fxml/1" fx:controller="View_Controller.AddPartController">
    <children>
-      <Label layoutX="23.0" layoutY="25.0" styleClass="headingLabel" text="Add Part" />
+      <Label layoutX="23.0" layoutY="20.0" styleClass="headingLabel" text="Add Part" textFill="#447eae">
+         <font>
+            <Font name="System Bold" size="18.0" />
+         </font></Label>
       <HBox alignment="CENTER" layoutX="83.0" layoutY="17.0" prefHeight="33.0" prefWidth="316.0">
          <children>
             <RadioButton fx:id="inhouseRadioButton" alignment="TOP_LEFT" mnemonicParsing="false" onAction="#radioButtonChanged" selected="true" text="In-House">

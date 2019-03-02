@@ -25,9 +25,9 @@
                <children>
                   <HBox alignment="CENTER_LEFT" prefHeight="150.0" prefWidth="200.0">
                      <children>
-                        <Label fx:id="titleLabel" text="Modify Product">
+                        <Label fx:id="titleLabel" text="Modify Product" textFill="#447eae">
                            <font>
-                              <Font name="System Bold" size="16.0" />
+                              <Font name="System Bold" size="18.0" />
                            </font></Label>
                      </children>
                      <padding>
@@ -101,7 +101,7 @@
                <children>
                   <HBox alignment="CENTER" prefHeight="100.0" prefWidth="200.0" spacing="15.0">
                      <children>
-                        <Button fx:id="searchButton" mnemonicParsing="false" onAction="#handleSearchButtonAction" prefHeight="25.0" prefWidth="65.0" text="Search" />
+                        <Button fx:id="searchButton" mnemonicParsing="false" onAction="#handleSearchButtonAction" prefHeight="25.0" prefWidth="75.0" text="Search" />
                         <TextField fx:id="searchTextField" />
                      </children>
                   </HBox>
@@ -136,7 +136,7 @@
                   </TableView>
                   <HBox alignment="CENTER_RIGHT" prefHeight="60.0" prefWidth="200.0">
                      <children>
-                        <Button fx:id="deleteButton" mnemonicParsing="false" onAction="#handleDeletePartButtonAction" prefHeight="25.0" prefWidth="65.0" text="Delete" />
+                        <Button fx:id="deleteButton" mnemonicParsing="false" onAction="#handleDeletePartButtonAction" prefHeight="25.0" prefWidth="75.0" text="Delete" />
                      </children>
                      <padding>
                         <Insets right="15.0" />
@@ -144,8 +144,8 @@
                   </HBox>
                   <HBox alignment="CENTER_RIGHT" prefHeight="60.0" prefWidth="200.0" spacing="15.0">
                      <children>
-                        <Button fx:id="saveButton" mnemonicParsing="false" onAction="#handleSaveButtonAction" prefHeight="25.0" prefWidth="65.0" text="Save" />
-                        <Button fx:id="cancelButton" mnemonicParsing="false" onAction="#handleCancelButtonAction" prefHeight="25.0" prefWidth="65.0" text="Cancel" />
+                        <Button fx:id="saveButton" mnemonicParsing="false" onAction="#handleSaveButtonAction" prefHeight="25.0" prefWidth="75.0" text="Save" />
+                        <Button fx:id="cancelButton" mnemonicParsing="false" onAction="#handleCancelButtonAction" prefHeight="25.0" prefWidth="75.0" text="Cancel" />
                      </children>
                      <padding>
                         <Insets right="15.0" />

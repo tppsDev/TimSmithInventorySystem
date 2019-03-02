@@ -30,31 +30,31 @@
                         <Font name="System Bold" size="18.0" />
                      </font>
                   </Label>
-                  <Button mnemonicParsing="false" prefHeight="25.0" prefWidth="75.0" text="Search">
+                  <Button fx:id="searchPartsButton" mnemonicParsing="false" onAction="#handleSearchPartsButtonAction" prefHeight="25.0" prefWidth="75.0" text="Search">
                      <HBox.margin>
                         <Insets left="45.0" />
                      </HBox.margin>
                   </Button>
-                  <TextField prefHeight="25.0" prefWidth="183.0" />
+                  <TextField fx:id="partSearchTextField" prefHeight="25.0" prefWidth="183.0" />
                </children>
                <padding>
                   <Insets left="20.0" />
                </padding>
             </HBox>
-            <TableView prefHeight="368.0" prefWidth="528.0">
+            <TableView fx:id="partTableView" prefHeight="368.0" prefWidth="528.0">
               <columns>
-                <TableColumn prefWidth="127.0" text="Part ID" />
-                <TableColumn prefWidth="127.0" text="Part Name" />
-                  <TableColumn prefWidth="127.0" text="Inventory Level" />
-                  <TableColumn prefWidth="127.0" text="Price/Cost per Unit" />
+                <TableColumn fx:id="partIDColumn" prefWidth="127.0" text="Part ID" />
+                <TableColumn fx:id="partNameColumn" prefWidth="127.0" text="Part Name" />
+                  <TableColumn fx:id="partInStockColumn" prefWidth="127.0" text="Inventory Level" />
+                  <TableColumn fx:id="partPriceColumn" prefWidth="127.0" text="Price/Cost per Unit" />
               </columns>
             </TableView>
             <HBox alignment="TOP_RIGHT" prefHeight="123.0" prefWidth="528.0" spacing="15.0">
                <children>
                   <Label fx:id="partSelectionErrorLabel" alignment="CENTER_RIGHT" prefHeight="25.0" prefWidth="200.0" textFill="RED" />
-                  <Button mnemonicParsing="false" prefHeight="25.0" prefWidth="75.0" text="Add" />
-                  <Button mnemonicParsing="false" prefHeight="25.0" prefWidth="75.0" text="Modify" />
-                  <Button mnemonicParsing="false" prefHeight="25.0" prefWidth="75.0" text="Delete" />
+                  <Button fx:id="addPartButton" mnemonicParsing="false" onAction="#handleAddPartButtonAction" prefHeight="25.0" prefWidth="75.0" text="Add" />
+                  <Button fx:id="modifyPartButton" mnemonicParsing="false" onAction="#handleModifyPartButtonAction" prefHeight="25.0" prefWidth="75.0" text="Modify" />
+                  <Button fx:id="deletePartButton" mnemonicParsing="false" onAction="#handleDeletePartButtonAction" prefHeight="25.0" prefWidth="75.0" text="Delete" />
                </children>
                <padding>
                   <Insets right="25.0" top="15.0" />
@@ -77,31 +77,31 @@
                         <Font name="System Bold" size="18.0" />
                      </font>
                   </Label>
-                  <Button mnemonicParsing="false" prefHeight="25.0" prefWidth="75.0" text="Search">
+                  <Button fx:id="searchProductsButton" mnemonicParsing="false" onAction="#handleSearchProductsButtonAction" prefHeight="25.0" prefWidth="75.0" text="Search">
                      <HBox.margin>
                         <Insets left="45.0" />
                      </HBox.margin>
                   </Button>
-                  <TextField prefHeight="25.0" prefWidth="183.0" />
+                  <TextField fx:id="productSearchTextField" prefHeight="25.0" prefWidth="183.0" />
                </children>
                <padding>
                   <Insets left="20.0" />
                </padding>
             </HBox>
-            <TableView prefHeight="368.0" prefWidth="528.0">
+            <TableView fx:id="productTableView" prefHeight="368.0" prefWidth="528.0">
                <columns>
-                  <TableColumn prefWidth="127.0" text="Prodcut ID" />
-                  <TableColumn prefWidth="127.0" text="Product Name" />
-                  <TableColumn prefWidth="127.0" text="Inventory Level" />
-                  <TableColumn prefWidth="127.0" text="Price per Unit" />
+                  <TableColumn fx:id="productIDColumn" prefWidth="127.0" text="Prodcut ID" />
+                  <TableColumn fx:id="productNameColumn" prefWidth="127.0" text="Product Name" />
+                  <TableColumn fx:id="productInStockColumn" prefWidth="127.0" text="Inventory Level" />
+                  <TableColumn fx:id="productPriceColumn" prefWidth="127.0" text="Price per Unit" />
                </columns>
             </TableView>
             <HBox alignment="TOP_RIGHT" prefHeight="123.0" prefWidth="528.0" spacing="15.0">
                <children>
                   <Label fx:id="productSelectionErrorLabel" alignment="CENTER_RIGHT" prefHeight="25.0" prefWidth="200.0" textFill="RED" />
-                  <Button mnemonicParsing="false" prefHeight="25.0" prefWidth="75.0" text="Add" />
-                  <Button mnemonicParsing="false" prefHeight="25.0" prefWidth="75.0" text="Modify" />
-                  <Button mnemonicParsing="false" prefHeight="25.0" prefWidth="75.0" text="Delete" />
+                  <Button fx:id="addProductButton" mnemonicParsing="false" onAction="#handleAddProductButtonAction" prefHeight="25.0" prefWidth="75.0" text="Add" />
+                  <Button fx:id="modifyProductButton" mnemonicParsing="false" onAction="#handleModifyProductButtonAction" prefHeight="25.0" prefWidth="75.0" text="Modify" />
+                  <Button fx:id="deleteProductButton" mnemonicParsing="false" onAction="#handleDeleteProductButtonAction" prefHeight="25.0" prefWidth="75.0" text="Delete" />
                </children>
                <padding>
                   <Insets right="25.0" top="15.0" />
@@ -112,5 +112,6 @@
             <Insets left="10.0" right="10.0" />
          </padding>
       </VBox>
+      <Button fx:id="exitButton" layoutX="1037.0" layoutY="606.0" mnemonicParsing="false" onAction="#handleExitButtonAction" prefHeight="25.0" prefWidth="75.0" text="Exit" />
    </children>
 </AnchorPane>
