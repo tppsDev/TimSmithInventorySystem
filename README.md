@@ -1,5 +1,5 @@
 # TimSmithInventorySystem
-TimSmithInventorySystem is built to the requirements of WGU C482 Software I
+TimSmithInventorySystem is built to the requirements of WGU C482 Software I --submitted 2/2020
 
 Here are the requirements:
 I. User Interface
